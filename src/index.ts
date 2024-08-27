@@ -6,6 +6,19 @@ let tasks : Array<string> = []
 
 buttonElement.onclick = addTask
 
+function showTasks(){
+    listElement.innerHTML = ""
+    tasks.map((item) => {
+        let todoElement = document.createElement("li")
+        let taskText = document.createTextNode(item)
+
+        todoElement.appendChild(taskText)
+        listElement.appendChild(todoElement)
+    })    
+}
+
+showTasks()
+
 function addTask() : boolean | void{
     if (inputElement.value === ""){
         alert("Digite o nome da tarefa")
