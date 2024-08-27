@@ -2,7 +2,9 @@ let listElement = document.querySelector("#app ul") as HTMLUListElement
 let inputElement = document.querySelector("#app input") as HTMLInputElement
 let buttonElement = document.querySelector("#app button") as HTMLElement
 
-let tasks : Array<string> = []
+let storedTasks : string | null = localStorage.getItem("@task_list")
+
+let tasks : Array<string> = storedTasks !== null && JSON.parse(storedTasks) || []
 
 buttonElement.onclick = addTask
 
