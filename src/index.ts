@@ -51,5 +51,7 @@ function saveTasks(){
 }
 
 function removeTask(index : number){
-    alert("Remove task")
+    tasks.splice(index, 1)
+    saveTasks()
+    showTasks()
 }
