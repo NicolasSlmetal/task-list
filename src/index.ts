@@ -22,6 +22,7 @@ function showTasks(){
         linkElement.appendChild(linkText)
 
         todoElement.appendChild(taskText)
+        todoElement.appendChild(linkElement)
         listElement.appendChild(todoElement)
     })    
 }
