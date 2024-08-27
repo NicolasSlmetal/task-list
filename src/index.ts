@@ -14,6 +14,10 @@ function showTasks(){
         let todoElement = document.createElement("li")
         let taskText = document.createTextNode(item)
 
+        let linkElement = document.createElement("a")
+        linkElement.setAttribute("href", "#")
+        linkElement.setAttribute("onclick", "removeTask()")
+
         todoElement.appendChild(taskText)
         listElement.appendChild(todoElement)
     })    
@@ -37,4 +41,8 @@ function addTask() : boolean | void{
 
 function saveTasks(){
     localStorage.setItem("@task_list", JSON.stringify(tasks))
+}
+
+function removeTask(){
+    alert("Remove task")
 }
