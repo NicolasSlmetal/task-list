@@ -4,6 +4,8 @@ let buttonElement = document.querySelector("#app button") as HTMLElement
 
 let tasks : Array<string> = []
 
+buttonElement.onclick = addTask
+
 function addTask(){
     if (inputElement.value === ""){
         alert("Digite o nome da tarefa")
