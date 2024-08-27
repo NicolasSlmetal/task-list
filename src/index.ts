@@ -17,3 +17,7 @@ function addTask() : boolean | void{
         inputElement.value = ""
     }
 }
+
+function saveTasks(){
+    localStorage.setItem("@task_list", JSON.stringify(tasks))
+}
