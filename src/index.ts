@@ -6,7 +6,7 @@ let tasks : Array<string> = []
 
 buttonElement.onclick = addTask
 
-function addTask(){
+function addTask() : boolean | void{
     if (inputElement.value === ""){
         alert("Digite o nome da tarefa")
         return false
