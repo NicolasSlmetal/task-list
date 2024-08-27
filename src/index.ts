@@ -15,8 +15,10 @@ function showTasks(){
         let taskText = document.createTextNode(item)
 
         let linkElement = document.createElement("a")
+        let index = tasks.indexOf(item)
+                
         linkElement.setAttribute("href", "#")
-        linkElement.setAttribute("onclick", "removeTask()")
+        linkElement.setAttribute("onclick", `removeTask(${index})`)
         linkElement.setAttribute("style", "margin-left: 5px")
 
         let linkText = document.createTextNode("Excluir")
@@ -48,6 +50,6 @@ function saveTasks(){
     localStorage.setItem("@task_list", JSON.stringify(tasks))
 }
 
-function removeTask(){
+function removeTask(index : number){
     alert("Remove task")
 }
