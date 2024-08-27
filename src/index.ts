@@ -15,6 +15,7 @@ function addTask() : boolean | void{
         let taskName : string = inputElement.value
         tasks.push(taskName)
         inputElement.value = ""
+        saveTasks()
     }
 }
 
