@@ -1,0 +1,12 @@
+{
+  "name": "task-list",
+  "version": "1.0.0",
+  "description": "This project was made during study sessions of Typescript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
