@@ -18,6 +18,9 @@ function showTasks(){
         linkElement.setAttribute("href", "#")
         linkElement.setAttribute("onclick", "removeTask()")
 
+        let linkText = document.createTextNode("Excluir")
+        linkElement.appendChild(linkText)
+
         todoElement.appendChild(taskText)
         listElement.appendChild(todoElement)
     })    
