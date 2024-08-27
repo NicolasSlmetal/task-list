@@ -17,6 +17,7 @@ function showTasks(){
         let linkElement = document.createElement("a")
         linkElement.setAttribute("href", "#")
         linkElement.setAttribute("onclick", "removeTask()")
+        linkElement.setAttribute("style", "margin-left: 5px")
 
         let linkText = document.createTextNode("Excluir")
         linkElement.appendChild(linkText)
